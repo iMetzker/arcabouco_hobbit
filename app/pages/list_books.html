@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Ivny Metzker" />
+  <link rel="shortcut icon" href="../assets/images/logo/house-hobbit.png" />
+
+  <meta name="description" content="projeto avaliativo final programação web, sistemas de informação" />
+  <meta name="keywords" content="programação, biblioteca, avaliativo, senhor dos aneis, o hobbit, tolkien" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../assets/fonts/icomoon/style.css" />
+  <link rel="stylesheet" href="../assets/fonts/flaticon/font/flaticon.css" />
+
+
+  <link rel="stylesheet" href="../assets/css/bootstrap-utilities.css" />
+  <link rel="stylesheet" href="../assets/css/tiny-slider.css" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.rtl.css" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <title>
+    Arcabouço de Livros
+  </title>
+</head>
+
+<body>
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <!-- MENU INTERNO -->
+  <nav class="site-nav">
+    <div class="container">
+      <div class="menu-bg-wrap">
+        <div class="site-navigation">
+          <a href="index.html" class="logo m-0 float-start">Arcabouço de Livros</a>
+
+          <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+            <li><a href="index.html">Home</a></li>
+            <li class="has-children active">
+              <a href="properties.html">Properties</a>
+              <ul class="dropdown">
+                <li><a href="#">Buy Property</a></li>
+                <li><a href="#">Sell Property</a></li>
+                <li class="has-children">
+                  <a href="#">Dropdown</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Sub Menu One</a></li>
+                    <li><a href="#">Sub Menu Two</a></li>
+                    <li><a href="#">Sub Menu Three</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+
+          <a href="#"
+            class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+            data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="home page-inner overlay" style="background-image: url('../assets/images/wp2285115.webp')">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-9 text-center mt-5">
+          <h1 class="heading" data-aos="fade-up">Arcabouço de Livros</h1>
+
+          <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+            <ol class="breadcrumb text-center justify-content-center">
+              <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+              <li class="breadcrumb-item active text-white-50" aria-current="page">
+                Arcabouço de Livros
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-properties">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="property-item mb-30">
+            <a href="./books/book_1.html" class="img">
+              <img src="../assets/images/books/o_silmarillion.jpg" alt="Image" class="img-fluid" />
+            </a>
+
+            <div class="property-content">
+              <div class="price mb-2"><span>R$ 69,99</span></div>
+              <div>
+                <span class="d-block mb-2 text-black-50">Capa Dura</span>
+                <span class="city d-block mb-3">O Silmarillion</span>
+                <div class="specs d-flex mb-4">
+                  <span class="d-block d-flex align-items-center me-3">
+                    <i class="fa-solid fa-earth-americas me-2"></i>
+                    <span class="caption">Idioma: Português</span>
+                  </span>
+                  <span class="d-block d-flex align-items-center me-3">
+                    <i class="fa-solid fa-book me-2"></i>
+                    <span class="caption">496 páginas</span>
+                  </span>
+                </div>
+
+                <a href="./books/book_1.html" class="btn btn-primary py-2 px-3">Explorar mais detalhes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="property-item mb-30">
+            <a href="../pages/books/book_2.html" class="img">
+              <img src="../assets/images/books/beren_luthien.jpg" alt="Image" class="img-fluid" />
+            </a>
+
+            <div class="property-content">
+              <div class="price mb-2"><span>R$ 69,99</span></div>
+              <div>
+                <span class="d-block mb-2 text-black-50">Capa Dura</span>
+                <span class="city d-block mb-3">Beren e Lúthien</span>
+                <div class="specs d-flex mb-4">
+                  <span class="d-block d-flex align-items-center me-3">
+                    <i class="fa-solid fa-earth-americas me-2"></i>
+                    <span class="caption">Idioma: Português</span>
+                  </span>
+                  <span class="d-block d-flex align-items-center me-3">
+                    <i class="fa-solid fa-book me-2"></i>
+                    <span class="caption">368 páginas</span>
+                  </span>
+                </div>
+
+                <a href="../pages/books/book_2.html" class="btn btn-primary py-2 px-3">Explorar mais detalhes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="property-item mb-30">
+            <a href="../pages/books/book_3.html" class="img">
+              <img src="../assets/images/books/filhos_hurin.jpg" alt="Image" class="img-fluid" />
+            </a>
+
+            <div class="property-content">
+              <div class="price mb-2"><span>R$ 69,99</span></div>
+              <div>
+                <span class="d-block mb-2 text-black-50">Capa Dura</span>
+                <span class="city d-block mb-3">Os Filhos de Húrin</span>
+                <div class="specs d-flex mb-4">
+                  <span class="d-block d-flex align-items-center me-3">
+                    <i class="fa-solid fa-earth-americas me-2"></i>
+                    <span class="caption">Idioma: Português</span>
+                  </span>
+                  <span class="d-block d-flex align-items-center me-3">
+                    <i class="fa-solid fa-book me-2"></i>
+                    <span class="caption">288 páginas</span>
+                  </span>
+                </div>
+
+                <a href="../pages/books/book_3.html" class="btn btn-primary py-2 px-3">Explorar mais detalhes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="property-item mb-30">
+            <a href="../pages/books/book_10.html" class="img">
+              <img src="../assets/images/books/queda_gondolin.jpg" alt="Image" class="img-fluid" />
+            </a>
+
+            <div class="property-content">
+              <div class="price mb-2"><span>R$ 69,99</span></div>
+              <div>
+                <span class="d-block mb-2 text-black-50">Capa Dura</span>
+                <span class="city d-block mb-3">A Queda de Gondolin</span>
+                <div class="specs d-flex mb-4">
+                  <span class="d-block d-flex align-items-center me-3">
+                    <i class="fa-solid fa-earth-americas me-2"></i>
+                    <span class="caption">Idioma: Português</span>
+                  </span>
+                  <span class="d-block d-flex align-items-center me-3">
+                    <i class="fa-solid fa-book me-2"></i>
+                    <span class="caption">288 páginas</span>
+                  </span>
+                </div>
+
+                <a href="../pages/books/book_10.html" class="btn btn-primary py-2 px-3">Explorar mais detalhes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="property-item mb-30">
+            <a href="../pages/books/book_4.html" class="img">
+              <img src="../assets/images/books/contos_numenor.webp" alt="Image" class="img-fluid" />
+            </a>
+
+            <div class="property-content">
+              <div class="price mb-2"><span>R$ 69,99</span></div>
+              <div>
+                <span class="d-block mb-2 text-black-50">Capa Dura</span>
+                <span class="city d-block mb-3">Contos Inacabados De Númenor</span>
+                <div class="specs d-flex mb-4">
+                  <span class="d-block d-flex align-items-center me-3">
+                    <i class="fa-solid fa-earth-americas me-2"></i>
+                    <span class="caption">Idioma: Português</span>
+                  </span>
+                  <span class="d-block d-flex align-items-center me-3">
+                    <i class="fa-solid fa-book me-2"></i>
+                    <span class="caption">624 páginas</span>
+                  </span>
+                </div>
+
+                <a href="../pages/books/book_4.html" class="btn btn-primary py-2 px-3">Explorar mais detalhes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="property-item mb-30">
+            <a href="../pages/books/book_5.html" class="img">
+              <img src="../assets/images/books/queda_numenor.jpg" alt="Image" class="img-fluid" />
+            </a>
+
+            <div class="property-content">
+              <div class="price mb-2"><span>R$ 45,00</span></div>
+              <div>
+                <span class="d-block mb-2 text-black-50">Capa Dura</span>
+                <span class="city d-block mb-3">A Queda de Númenor</span>
+                <div class="specs d-flex mb-4">
+                  <span class="d-block d-flex align-items-center me-3">
+                    <i class="fa-solid fa-earth-americas me-2"></i>
+                    <span class="caption">Idioma: Português</span>
+                  </span>
+                  <span class="d-block d-flex align-items-center me-3">
+                    <i class="fa-solid fa-book me-2"></i>
+                    <span class="caption">336 páginas</span>
+                  </span>
+                </div>
+
+                <a href="../pages/books/book_5.html" class="btn btn-primary py-2 px-3">Explorar mais detalhes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="property-item mb-30">
+            <a href="../pages/books/book_6.html" class="img">
+              <img src="../assets/images/books/hobbit.jpg" alt="Image" class="img-fluid" />
+            </a>
+
+            <div class="property-content">
+              <div class="price mb-2"><span>R$ 80,00</span></div>
+              <div>
+                <span class="d-block mb-2 text-black-50">Capa Dura</span>
+                <span class="city d-block mb-3">O Hobbit</span>
+                <div class="specs d-flex mb-4">
+                  <span class="d-block d-flex align-items-center me-3">
+                    <i class="fa-solid fa-earth-americas me-2"></i>
+                    <span class="caption">Idioma: Português</span>
+                  </span>
+                  <span class="d-block d-flex align-items-center me-3">
+                    <i class="fa-solid fa-book me-2"></i>
+                    <span class="caption">336 páginas</span>
+                  </span>
+                </div>
+
+                <a href="../pages/books/book_6.html" class="btn btn-primary py-2 px-3">Explorar mais detalhes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="property-item mb-30">
+            <a href="../pages/books/book_7.html" class="img">
+              <img src="../assets/images/books/lord_1.jpg" alt="Image" class="img-fluid" />
+            </a>
+
+            <div class="property-content">
+              <div class="price mb-2"><span>R$ 45,00</span></div>
+              <div>
+                <span class="d-block mb-2 text-black-50">Capa Dura</span>
+                <span class="city d-block mb-3">O Senhor dos Anéis: A Sociedade do Anel</span>
+                <div class="specs d-flex mb-4">
+                  <span class="d-block d-flex align-items-center me-3">
+                    <i class="fa-solid fa-earth-americas me-2"></i>
+                    <span class="caption">Idioma: Português</span>
+                  </span>
+                  <span class="d-block d-flex align-items-center me-3">
+                    <i class="fa-solid fa-book me-2"></i>
+                    <span class="caption">576 páginas</span>
+                  </span>
+                </div>
+
+                <a href="../pages/books/book_7.html" class="btn btn-primary py-2 px-3">Explorar mais detalhes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="property-item mb-30">
+            <a href="../pages/books/book_8.html" class="img">
+              <img src="../assets/images/books/lord_2.jpg" alt="Image" class="img-fluid" />
+            </a>
+
+            <div class="property-content">
+              <div class="price mb-2"><span>R$ 45,00</span></div>
+              <div>
+                <span class="d-block mb-2 text-black-50">Capa Dura</span>
+                <span class="city d-block mb-3">O Senhor dos Anéis: As Duas Torres</span>
+                <div class="specs d-flex mb-4">
+                  <span class="d-block d-flex align-items-center me-3">
+                    <i class="fa-solid fa-earth-americas me-2"></i>
+                    <span class="caption">Idioma: Português</span>
+                  </span>
+                  <span class="d-block d-flex align-items-center me-3">
+                    <i class="fa-solid fa-book me-2"></i>
+                    <span class="caption">464 páginas</span>
+                  </span>
+                </div>
+
+                <a href="../pages/books/book_8.html" class="btn btn-primary py-2 px-3">Explorar mais detalhes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="property-item mb-30">
+            <a href="../pages/books/book_9.html" class="img">
+              <img src="../assets/images/books/lord_3.jpg" alt="Image" class="img-fluid" />
+            </a>
+
+            <div class="property-content">
+              <div class="price mb-2"><span>R$ 55,00</span></div>
+              <div>
+                <span class="d-block mb-2 text-black-50">Capa Dura</span>
+                <span class="city d-block mb-3">O Senhor dos Anéis: O Retorno do rei</span>
+                <div class="specs d-flex mb-4">
+                  <span class="d-block d-flex align-items-center me-3">
+                    <i class="fa-solid fa-earth-americas me-2"></i>
+                    <span class="caption">Idioma: Português</span>
+                  </span>
+                  <span class="d-block d-flex align-items-center me-3">
+                    <i class="fa-solid fa-book me-2"></i>
+                    <span class="caption">450 páginas</span>
+                  </span>
+                </div>
+
+                <a href="../pages/books/book_9.html" class="btn btn-primary py-2 px-3">Explorar mais detalhes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center py-5">
+          <div class="col-lg-3">Paginação (1 de 3)</div>
+          <div class="col-lg-6 text-center">
+            <div class="custom-pagination">
+              <a href="#" class="active">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <div class="row mb-5 align-items-center">
+          <div class="col-lg-6 text-center mx-auto">
+            <h2 class="font-weight-bold text-primary heading">
+              Livros em Destaque
+            </h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="property-slider-wrap">
+              <div class="property-slider">
+
+                <div class="property-item">
+                  <a href="../pages/books/book_6.html" class="img">
+                    <img src="../assets/images/books/hobbit.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>R$ 80,00</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">Capa Dura</span>
+                      <span class="city d-block mb-3">O Hobbit</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <i class="fa-solid fa-earth-americas me-2"></i>
+                          <span class="caption">Idioma: Português</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center me-3">
+                          <i class="fa-solid fa-book me-2"></i>
+                          <span class="caption">336 páginas</span>
+                        </span>
+                      </div>
+
+                      <a href="../pages/books/book_6.html" class="btn btn-primary py-2 px-3">Explorar mais detalhes</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- LIVRO 7 -->
+
+                <div class="property-item">
+                  <a href="../pages/books/book_7.html" class="img">
+                    <img src="../assets/images/books/lord_1.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>R$ 45,00</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">Capa Dura</span>
+                      <span class="city d-block mb-3">O Senhor dos Anéis: A Sociedade do Anel</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <i class="fa-solid fa-earth-americas me-2"></i>
+                          <span class="caption">Idioma: Português</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center me-3">
+                          <i class="fa-solid fa-book me-2"></i>
+                          <span class="caption">576 páginas</span>
+                        </span>
+                      </div>
+
+                      <a href="../pages/books/book_7.html" class="btn btn-primary py-2 px-3">Explorar mais detalhes</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- LIVRO 8 -->
+
+                <div class="property-item">
+                  <a href="../pages/books/book_8.html" class="img">
+                    <img src="../assets/images/books/lord_2.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>R$ 45,00</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">Capa Dura</span>
+                      <span class="city d-block mb-3">O Senhor dos Anéis: As Duas Torres</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <i class="fa-solid fa-earth-americas me-2"></i>
+                          <span class="caption">Idioma: Português</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center me-3">
+                          <i class="fa-solid fa-book me-2"></i>
+                          <span class="caption">464 páginas</span>
+                        </span>
+                      </div>
+
+                      <a href="../pages/books/book_8.html" class="btn btn-primary py-2 px-3">Explorar mais detalhes</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- LIVRO 9 -->
+
+                <div class="property-item">
+                  <a href="../pages/books/book_9.html" class="img">
+                    <img src="../assets/images/books/lord_3.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>R$ 55,00</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">Capa Dura</span>
+                      <span class="city d-block mb-3">O Senhor dos Anéis: O Retorno do rei</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <i class="fa-solid fa-earth-americas me-2"></i>
+                          <span class="caption">Idioma: Português</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center me-3">
+                          <i class="fa-solid fa-book me-2"></i>
+                          <span class="caption">450 páginas</span>
+                        </span>
+                      </div>
+
+                      <a href="../pages/books/book_9.html" class="btn btn-primary py-2 px-3">Explorar mais detalhes</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- LIVRO 10 -->
+
+              </div>
+
+              <div id="property-nav" class="controls" tabindex="0" aria-label="Carousel Navigation">
+                <span class="prev" data-controls="prev" aria-controls="property" tabindex="-1">Prev</span>
+                <span class="next" data-controls="next" aria-controls="property" tabindex="-1">Next</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div id="footer-container"></div>
+
+  <!-- PRELOADER -->
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/1118b8d158.js" crossorigin="anonymous"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/tiny-slider.js"></script>
+  <script src="../assets/js/aos.js"></script>
+  <script src="../assets/js/navbar.js"></script>
+  <script src="../assets/js/counter.js"></script>
+  <script src="../assets/js/custom.js"></script>
+  <script src="../assets/js/pages.js"></script>
+  <script src="../assets/js/filter_books.js"></script>
+</body>
+
+</html>

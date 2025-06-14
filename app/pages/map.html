@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Ivny Metzker" />
+  <link rel="shortcut icon" href="../assets/images/logo/house-hobbit.png" />
+
+  <meta name="description" content="projeto avaliativo final programação web, sistemas de informação" />
+  <meta name="keywords" content="programação, biblioteca, avaliativo, senhor dos aneis, o hobbit, tolkien" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../assets/fonts/icomoon/style.css" />
+  <link rel="stylesheet" href="../assets/fonts/flaticon/font/flaticon.css" />
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="../assets/css/tiny-slider.css" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.rtl.css" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <title>
+    Mapa Terra Média
+  </title>
+</head>
+
+<body>
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <!-- MENU INTERNAL -->
+  <div id="menu-internal"></div>
+
+  <div class="home page-inner overlay"
+    style="background-image: url('../assets/images/lord-of-the-rings-landscape.webp')">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-9 text-center mt-5">
+          <h1 class="heading" data-aos="fade-up">Mapa Terra Média</h1>
+
+          <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+            <ol class="breadcrumb text-center justify-content-center">
+              <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+              <li class="breadcrumb-item active text-white-50" aria-current="page">
+                Mapa Terra Média
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MIDLE EARTH -->
+  <div class="section section-4 bg-light">
+    <div class="container">
+      <div class="row justify-content-between mb-5">
+
+        <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
+          <div class="img-about dots form-floating img-expand">
+            <img src="../assets/images/vintage-canvas-sn-5ff2176c29e86c24bf17266231791544-1024-1024.png" alt="Image"
+              class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div>
+            <h2 class="font-weight-bold heading text-primary mb-4">
+              Sirya Endórë
+            </h2>
+            <p class="text-black-50">
+              Sirya Endórë ou, Terra Média, é um vasto continente das histórias de J.R.R. Tolkien, trata-se de um mundo
+              recheado de montanhas imponentes, florestas antigas, rios lendários, vilarejos encantadores e reinos que
+              guardam culturas milenares. Cada região tem sua própria história, povo e idioma, compondo um mosaico
+              cultural que enriquece a narrativa épica de Tolkien.
+            </p>
+
+            <p>Os vários conflitos com Melkor resultaram na distorção das formas das terras. Originalmente, havia apenas
+              um corpo de água interior, no meio do qual estava situada a ilha de Almaren,onde viviam os Valar. Quando
+              Melkor destruiu as lâmpadas dos Valar, que iluminavam o mundo, foram criados dois vastos mares, mas
+              Almaren e o seu lago foram destruídos nas grandes ondas causadas pela destruição. O mar setentrional
+              tornou-se o Mar de Helcar (Helkar). As terras a leste das Montanhas Azuis tornaram-se em Beleriand (que
+              significa "a terra dos Valar"). Melkor ergueu as Montanhas Nebulosas para impedir o progresso do Vala
+              Oromë, na caça deste às bestas de Melkor durante o período de escuridão que antecedeu o despertar dos
+              Elfos.</p>
+            <p>As lutas violentas durante a Guerra da Ira entre a Hoste dos Valar e os exércitos de Melkor, no final da
+              Primeira Era, trouxeram a destruição de Beleriand. Também é possível que, durante este período, o mar
+              interior de Helcar tenha sido escoado.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage" />
+  </div>
+
+  <!-- KINDONGS -->
+  <div class="section bg-light">
+    <div class="container">
+      <div class="row">
+        <h2 class="font-weight-bold heading text-primary mb-4">
+          Reinos
+        </h2>
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/hobbit-door-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Condado (Shire)
+            </h3>
+            <p class="text-black-50">
+              Lar dos Hobbits, localizado no noroeste. Um lugar pacato, com vilarejos como Hobbiton, Bolseiro e Vila dos
+              Hobbits.
+            </p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/indian-village-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">Bree</h3>
+            <p class="text-black-50">
+              Um vilarejo onde homens e hobbits convivem, próximo ao Condado.
+            </p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/montains-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Rivendell (Valfenda)
+            </h3>
+            <p class="text-black-50">
+              Refúgio élfico nas Montanhas Nebulosas, liderado por Elrond.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/archery-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Lothlórien
+            </h3>
+            <p class="text-black-50">
+              Reino élfico no coração da floresta dourada, sob o governo de Galadriel e Celeborn.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/tree-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Floresta das Trevas (Mirkwood)
+            </h3>
+            <p class="text-black-50">
+              Antigo lar dos Elfos da Floresta, incluindo o rei Thranduil.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/walking-dragon-legend-myth-folklore-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Montanha Solitária (Erebor)
+            </h3>
+            <p class="text-black-50">
+              Reino anão recuperado por Thorin Escudo de Carvalho.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/money-bag-dollar-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Cidade do Lago (Esgaroth)
+            </h3>
+            <p class="text-black-50">
+              Um importante centro de comércio ao sul de Erebor.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/knight-1-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Rohan
+            </h3>
+            <p class="text-black-50">
+              Reino dos cavaleiros Rohirrim, nas planícies.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/castle-svgrepo-com (1).svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Gondor
+            </h3>
+            <p class="text-black-50">
+              Um dos reinos mais poderosos dos Homens, com destaque para Minas Tirith.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/eye-scan-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Mordor
+            </h3>
+            <p class="text-black-50">Território sombrio e inóspito, governado por Sauron.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- LANGUAGES -->
+  <div class="section bg-light" id="languages">
+    <div class="container">
+      <div class="row">
+        <h2 class="font-weight-bold heading text-primary mb-4">
+          Guia de Linguas Antigas
+        </h2>
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/translate-thin-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Westron (Idioma Comum)
+            </h3>
+            <p class="text-black-50">
+              A língua mais falada entre os povos livres da Terra Média.
+            </p>
+            <p class="font-weight-light color-md">Usada no Condado, em Bree, Gondor, Rohan e na Cidade do Lago.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/translate-thin-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Quenya
+            </h3>
+            <p class="text-black-50">
+              Língua antiga dos Elfos de Valinor.
+            </p>
+            <p class="font-weight-light color-md">Usada em cerimônias e como língua culta entre os elfos e estudiosos.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/translate-thin-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Sindarin
+            </h3>
+            <p class="text-black-50">
+              Língua élfica do dia a dia.
+            </p>
+            <p class="font-weight-light color-md">Falada em Lothlórien, Rivendell e entre os Elfos Cinzentos de diversas
+              regiões.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/translate-thin-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Khuzdul
+            </h3>
+            <p class="text-black-50">
+              Língua secreta dos Anões.
+            </p>
+            <p class="font-weight-light color-md">Pouco falada abertamente, mas usada entre eles em Erebor e outras
+              fortalezas anãs.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/translate-thin-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Adûnaico
+            </h3>
+            <p class="text-black-50">
+              Língua antiga dos Númenorianos.
+            </p>
+            <p class="font-weight-light color-md">Influenciou o Westron e era falada pelos ancestrais dos homens de
+              Gondor e Arnor.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/translate-thin-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Idioma Negro de Mordor
+            </h3>
+            <p class="text-black-50">
+              Criado por Sauron para seus servos e os Nazgûl.
+            </p>
+            <p class="font-weight-light color-md">Utilizado em Mordor e gravado no Um Anel.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/translate-thin-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Rohirric
+            </h3>
+            <p class="text-black-50">
+              Idioma dos Rohirrim (inspirado no inglês antigo).
+            </p>
+            <p class="font-weight-light color-md">Embora seja traduzido como Westron nos livros, é uma língua própria.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/translate-thin-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Línguas Orientais (Variadas)
+            </h3>
+            <p class="text-black-50">
+              Faladas por povos de Rhûn e Harad.
+            </p>
+            <p class="font-weight-light color-md">Pouco documentadas, mas distintas do Westron.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/translate-thin-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Idioma dos Ents (Entês)
+            </h3>
+            <p class="text-black-50">
+              Língua complexa e extremamente lenta falada pelos Ents de Fangorn.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RACES -->
+  <div class="section bg-light" id="races">
+    <div class="container">
+      <div class="row">
+        <h2 class="font-weight-bold heading text-primary mb-4">
+          Principais Raças
+        </h2>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/hobbit-door-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Hobbits
+            </h3>
+            <p class="text-black-50">
+              Pequenos, pacíficos, vivem no Condado.
+            </p>
+            <p class="font-weight-light color-md">Falam Westron.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/people-nearby-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">Homens</h3>
+            <p class="text-black-50">
+              Presentes em reinos como Gondor, Rohan, Bree e outros.
+            </p>
+            <p class="font-weight-light color-md">Falam Westron, Rohirric ou línguas orientais (Rhûn, Harad).</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/archery-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Elfos
+            </h3>
+            <p class="text-black-50">
+              Seres imortais e sábios, habitantes de florestas e vales.
+            </p>
+            <p class="font-weight-light color-md">Falam principalmente Sindarin e Quenya.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/hammer-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Anões
+            </h3>
+            <p class="text-black-50">
+              Habitantes de montanhas e cavernas, mestres ferreiros.
+            </p>
+            <p class="font-weight-light color-md">Falam Khuzdul entre si, mas usam Westron com outras raças.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/orc-head-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Orcs e Goblins
+            </h3>
+            <p class="text-black-50">
+              Criaturas malignas a serviço de Sauron ou Saruman.
+            </p>
+            <p class="font-weight-light color-md">Falam dialetos rudes, com influência do Idioma Negro.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/tree-decidious-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Ents
+            </h3>
+            <p class="text-black-50">
+              Guardiões das florestas, como Barbárvore.
+            </p>
+            <p class="font-weight-light color-md">
+              Falam Entês.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/wizard-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Maiar
+            </h3>
+            <p class="text-black-50">
+              Seres espirituais, como Gandalf, Saruman e Sauron.
+            </p>
+            <p class="font-weight-light color-md">
+              Podem falar várias línguas.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/walking-dragon-legend-myth-folklore-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Dragões
+            </h3>
+            <p class="text-black-50">
+              Seres antigos e inteligentes.
+            </p>
+            <p class="font-weight-light color-md">
+              Capazes de compreender e falar línguas como Westron (ex: Smaug).
+            </p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/troll-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Trolls
+            </h3>
+            <p class="text-black-50">Criaturas grandes e brutais falam de forma rudimentar. </p>
+          </div>
+        </div>
+        
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <div class="box-feature mb-4">
+            <img src="../assets/images/svg/eagle-outline-svgrepo-com.svg" alt="icon" class="mb-3">
+            <h3 class="text-black mb-3 font-weight-bold">
+              Águias Gigantes 
+            </h3>
+            <p class="text-black-50">Criaturas sábias que podem falar o Westron.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section sec-emphasis">
+    <div class="container">
+      <div class="row mb-5 align-items-center">
+        <div class="col-md-6">
+          <h2 class="font-weight-bold heading text-primary mb-4 mb-md-0">
+            Frases de Senhor dos Anéis
+          </h2>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <div id="highlight-book-nav">
+            <span class="prev" data-controls="prev"><</span>
+
+            <span class="next" data-controls="next">></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4"></div>
+      </div>
+      <div class="highlight-book-slider-wrap">
+        <div class="highlight-book-slider">
+          <div class="item">
+            <div class="highlight-book">
+              <h3 class="h5 text-primary mb-4">Gandalf</h3>
+              <blockquote>
+                <p>
+                  &ldquo;Muitos que vivem merecem a morte. E alguns que morrem merecem viver. Você pode dar-lhes a vida? Então não seja tão ávido para julgar e condenar alguém a morte. Pois mesmo os muitos sábios não conseguem ver os dois lados.&rdquo;
+                </p>
+              </blockquote>
+              <p class="text-black-50">O Senhor dos Anéis - A Sociedade do Anel (2001)</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="highlight-book">
+              <h3 class="h5 text-primary mb-4">Gandalf</h3>
+              <blockquote>
+                <p>
+                  &ldquo;Você pode encontrar as coisas que perdeu, mas nunca as que abandonou.&rdquo;
+                </p>
+              </blockquote>
+              <p class="text-black-50">O Senhor dos Anéis - A Sociedade do Anel (2001)</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="highlight-book">
+              <h3 class="h5 text-primary mb-4">Gandalf</h3>
+              <blockquote>
+                <p>
+                  &ldquo;O mundo não está em seus livros e mapas. Ele está lá fora!&rdquo;
+                </p>
+              </blockquote>
+              <p class="text-black-50">O Hobbit: Uma Viagem Inesperada (2012)</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="highlight-book">
+              <h3 class="h5 text-primary mb-4">Gandalf</h3>
+              <blockquote>
+                <p>
+                  &ldquo;Para olhos tortos, a realidade pode ter um rosto desvirtuado.&rdquo;
+                </p>
+              </blockquote>
+              <p class="text-black-50">O Senhor dos Anéis - As Duas Torres (2012)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div id="footer-container"></div>
+
+  <!-- PRELOADER -->
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/tiny-slider.js"></script>
+  <script src="../assets/js/aos.js"></script>
+  <script src="../assets/js/navbar.js"></script>
+  <script src="../assets/js/counter.js"></script>
+  <script src="../assets/js/custom.js"></script>
+  <script src="../assets/js/pages.js"></script>
+  <script src="../assets/js/modal.js"></script>
+</body>
+
+</html>
