@@ -1718,3 +1718,36 @@ nav[aria-label="breadcrumb"] li:before {
 .img-expand {
   cursor: pointer;
 }
+
+.content-enrollment input,
+.content-enrollment textarea,
+.content-enrollment select{
+border: none;
+}
+
+.content-enrollment input,
+.content-enrollment textarea,
+.content-enrollment select{
+border-bottom: 2.3px solid #989946;
+}
+
+.content-enrollment input:focus,
+.content-enrollment textarea:focus,
+.content-enrollment select:focus{
+border-bottom: 3px solid #d3bf38;
+}
+
+.content-enrollment .form-select {
+  padding: 0;
+}
+
+.content-enrollment select{
+  color: rgba(0, 0, 0, 0.5) !important;
+  font-size: 14px;
+}
+
+.form-floating label{
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+

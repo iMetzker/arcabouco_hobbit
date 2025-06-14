@@ -27,7 +27,6 @@
 				var newElSpan = document.createElement('span');
 				newElSpan.setAttribute('class', 'arrow-collapse collapsed');
 
-				// prepend equivalent to jquery
 				hasChild.insertBefore(newElSpan, refEl);
 
 				var arrowCollapse = hasChild.querySelector('.arrow-collapse');
@@ -43,8 +42,6 @@
 
 		}, 1000);
 
-
-		// Click js-menu-toggle
 
 		var menuToggle = document.querySelectorAll(".js-menu-toggle");
 		var mTog;

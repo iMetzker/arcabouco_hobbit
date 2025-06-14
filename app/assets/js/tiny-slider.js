@@ -71,9 +71,7 @@ var tns = (function (){
     var docOverflow = '';
     if (body.fake) {
       docOverflow = docElement.style.overflow;
-    //avoid crashing IE8, if background image is used
     body.style.background = '';
-    //Safari 5.13/5.1.4 OSX stops loading if ::-webkit-scrollbar is used and scrollbars are visible
     body.style.overflow = docElement.style.overflow = 'hidden';
     docElement.appendChild(body);
   }
@@ -85,13 +83,10 @@ function resetFakeBody (body, docOverflow) {
   if (body.fake) {
     body.remove();
     docElement.style.overflow = docOverflow;
-    // Trigger layout so kinetic scrolling isn't disabled in iOS6+
-    // eslint-disable-next-line
     docElement.offsetHeight;
   }
 }
 
-// get css-calc 
 
 function calc() {
   var doc = document, 
@@ -120,10 +115,8 @@ function calc() {
   return result;
 }
 
-// get subpixel support value
 
 function percentageLayout() {
-  // check subpixel layout supporting
   var doc = document,
   body = getBody(),
   docOverflow = setFakeBody(body),
@@ -184,9 +177,7 @@ function mediaquerySupport () {
   return position === "absolute";
 }
 
-// create and append style sheet
 function createStyleSheet (media, nonce) {
-  // Create the <style> tag
   var style = document.createElement("style");
   // style.setAttribute("type", "text/css");
 
@@ -539,7 +530,7 @@ var tns = function(options) {
     lazyload: false,
     lazyloadSelector: '.tns-lazy-img',
     touch: true,
-    mouseDrag: false,
+    mouseDrag: true,
     swipeAngle: 15,
     nested: false,
     preventActionWhenRunning: false,

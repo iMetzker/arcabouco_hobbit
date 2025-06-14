@@ -73,15 +73,6 @@
               </p>
             </div>
 
-            <div class="open-hours mt-4">
-              <i class="icon-clock-o"></i>
-              <h4 class="mb-2">Disponibilidade:</h4>
-              <p>
-                Sem Disponibilidade <br />
-                00:00h
-              </p>
-            </div>
-
             <div class="email mt-4">
               <i class="icon-envelope"></i>
               <h4 class="mb-2">Email:</h4>
@@ -91,7 +82,7 @@
             <div class="phone mt-4">
               <i class="icon-phone"></i>
               <h4 class="mb-2">Telefone:</h4>
-              <p>+1 1234 55488 55</p>
+              <p>+12 3456-7891</p>
             </div>
           </div>
         </div>
@@ -111,17 +102,16 @@
             </div>
 
             <div class="form-floating mb-3">
-              <select class="form-select">
-                <option selected disabled>Motivo</option>
+              <select class="form-select p-2">
+                <option selected disabled>Motivo do Contato</option>
                 <option value="feedback">Feedback</option>
                 <option value="bug">Reportar Bug</option>
                 <option value="congratulations">Elogio</option>
               </select>
-
             </div>
 
             <div class="form-floating mb-3">
-              <textarea class="form-control" rows="3"></textarea>
+              <textarea class="form-control" rows="8" placeholder="mensagem"></textarea>
               <label for="student_name">Mensagem</label>
             </div>
 
@@ -153,16 +143,7 @@
   <script src="../assets/js/message.js"></script>
 
   <!--  SWEET ALERT -->
-  <script>
-    Swal.fire({
-      position: "top-end",
-      icon: "success",
-      title: "Mensagem enviada!",
-      showConfirmButton: false,
-      timer: 1500
-    });
-
-  </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
