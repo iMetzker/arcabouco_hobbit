@@ -1,5 +1,5 @@
 .logo {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
 }
 .logo:hover {
@@ -26,7 +26,7 @@
   display: inline-block;
 }
 .site-nav .site-navigation .site-menu > li > a {
-  font-size: 15px;
+  font-size: 12px;
   padding: 10px 15px;
   display: inline-block;
   text-decoration: none !important;
@@ -786,17 +786,6 @@ color: #45423d;
   position: relative;
 }
 
-/* .home-slide .img.overlay:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  z-index: 1;
-  background: rgba(34, 34, 34, 0.4);
-} */
-
 .section {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -1043,7 +1032,7 @@ color: #45423d;
 }
 .property-item .property-content .price,
 .property-item .property-content .city {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   color: #45423d;
 }
@@ -1674,7 +1663,7 @@ nav[aria-label="breadcrumb"] li:before {
 }
 
 .explore-map {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   position: absolute;
   bottom: 40px;
