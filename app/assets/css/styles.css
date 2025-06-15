@@ -1645,6 +1645,12 @@ nav[aria-label="breadcrumb"] li:before {
   min-height: 100%;
 }
 
+@media (max-width: 765px) {
+  .card-home .stat-block {
+  border: none;
+}
+}
+
 .card-home .col-md-4:first-child .stat-block {
   border-left: none;
 }
