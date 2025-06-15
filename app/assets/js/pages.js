@@ -22,4 +22,4 @@ function carregarComponente(idElement, caminhoDoComponente, callback = null) {
 // CARREGANDO COMPONENTES DA PÁGINA
 carregarComponente('menu-home',  `${basePath}/app/layout/menu_home.html`, siteMenuClone);
 carregarComponente('menu-internal',  `${basePath}/app/layout/menu_internal.html`, siteMenuClone);
-carregarComponente('footer-container', `${basePath}app/layout/footer.html`);
+carregarComponente('footer-container', `${basePath}/app/layout/footer.html`, siteMenuClone);
