@@ -36,6 +36,7 @@ Além da biblioteca com os livros, incluí funcionalidades extras que enriquecem
 - CSS 3
 - Bootstrap 5
 - JavaScript
+- Tiny Slider
 
 ## 🖥️ Demonstração
 
