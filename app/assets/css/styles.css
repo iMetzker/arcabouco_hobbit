@@ -5,6 +5,19 @@
 .logo:hover {
   color: #1f3239 !important;
 }
+
+@media (max-width: 1202px) {
+  .logo {
+    display: none;
+}
+}
+
+@media (max-width: 991px) {
+  .logo {
+    display: block;
+}
+}
+
 .site-nav {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -555,14 +568,12 @@
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5);
-  /*for IE*/
 }
 
 .burger.active:after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-5);
-  /*for IE*/
 }
 
 .burger:focus {
