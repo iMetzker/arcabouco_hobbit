@@ -1,87 +1,70 @@
-(function(){
+function siteMenuClone() {
+  'use strict';
 
-	'use strict'
+  var jsCloneNavs = document.querySelectorAll('.js-clone-nav');
+  var siteMobileMenuBody = document.querySelector('.site-mobile-menu-body');
 
+  jsCloneNavs.forEach(nav => {
+    var navCloned = nav.cloneNode(true);
+    navCloned.setAttribute('class', 'site-nav-wrap');
+    siteMobileMenuBody.appendChild(navCloned);
+  });
 
-	var siteMenuClone = function() {
-		var jsCloneNavs = document.querySelectorAll('.js-clone-nav');
-		var siteMobileMenuBody = document.querySelector('.site-mobile-menu-body');
-		
+  setTimeout(function () {
+    var hasChildrens = document.querySelector('.site-mobile-menu').querySelectorAll('.has-children');
 
+    var counter = 0;
+    hasChildrens.forEach(hasChild => {
+      var refEl = hasChild.querySelector('a');
 
-		jsCloneNavs.forEach(nav => {
-			var navCloned = nav.cloneNode(true);
-			navCloned.setAttribute('class', 'site-nav-wrap');
-			siteMobileMenuBody.appendChild(navCloned);
-		});
+      var newElSpan = document.createElement('span');
+      newElSpan.setAttribute('class', 'arrow-collapse collapsed');
 
-		setTimeout(function(){
+      hasChild.insertBefore(newElSpan, refEl);
 
-			var hasChildrens = document.querySelector('.site-mobile-menu').querySelectorAll(' .has-children');
+      var arrowCollapse = hasChild.querySelector('.arrow-collapse');
+      arrowCollapse.setAttribute('data-bs-toggle', 'collapse');
+      arrowCollapse.setAttribute('data-bs-target', '#collapseItem' + counter);
 
-			var counter = 0;
-			hasChildrens.forEach( hasChild => {
-				
-				var refEl = hasChild.querySelector('a');
+      var dropdown = hasChild.querySelector('.dropdown');
+      dropdown.setAttribute('class', 'collapse');
+      dropdown.setAttribute('id', 'collapseItem' + counter);
 
-				var newElSpan = document.createElement('span');
-				newElSpan.setAttribute('class', 'arrow-collapse collapsed');
+      counter++;
+    });
+  }, 1000);
 
-				hasChild.insertBefore(newElSpan, refEl);
+  var menuToggle = document.querySelectorAll(".js-menu-toggle");
+  var mTog;
+  menuToggle.forEach(mtoggle => {
+    mTog = mtoggle;
+    mtoggle.addEventListener("click", (e) => {
+      if (document.body.classList.contains('offcanvas-menu')) {
+        document.body.classList.remove('offcanvas-menu');
+        mtoggle.classList.remove('active');
+        mTog.classList.remove('active');
+      } else {
+        document.body.classList.add('offcanvas-menu');
+        mtoggle.classList.add('active');
+        mTog.classList.add('active');
+      }
+    });
+  });
 
-				var arrowCollapse = hasChild.querySelector('.arrow-collapse');
-				arrowCollapse.setAttribute('data-bs-toggle', 'collapse');
-				arrowCollapse.setAttribute('data-bs-target', '#collapseItem' + counter);
+  var specifiedElement = document.querySelector(".site-mobile-menu");
+  var mt, mtoggleTemp;
+  document.addEventListener('click', function (event) {
+    var isClickInside = specifiedElement.contains(event.target);
+    menuToggle.forEach(mtoggle => {
+      mtoggleTemp = mtoggle;
+      mt = mtoggle.contains(event.target);
+    });
 
-				var dropdown = hasChild.querySelector('.dropdown');
-				dropdown.setAttribute('class', 'collapse');
-				dropdown.setAttribute('id', 'collapseItem' + counter);
-
-				counter++;
-			});
-
-		}, 1000);
-
-
-		var menuToggle = document.querySelectorAll(".js-menu-toggle");
-		var mTog;
-		menuToggle.forEach(mtoggle => {
-			mTog = mtoggle;
-			mtoggle.addEventListener("click", (e) => {
-				if ( document.body.classList.contains('offcanvas-menu') ) {
-					document.body.classList.remove('offcanvas-menu');
-					mtoggle.classList.remove('active');
-					mTog.classList.remove('active');
-				} else {
-					document.body.classList.add('offcanvas-menu');
-					mtoggle.classList.add('active');
-					mTog.classList.add('active');
-				}
-			});
-		})
-
-
-
-		var specifiedElement = document.querySelector(".site-mobile-menu");
-		var mt, mtoggleTemp;
-		document.addEventListener('click', function(event) {
-			var isClickInside = specifiedElement.contains(event.target);
-			menuToggle.forEach(mtoggle => {
-				mtoggleTemp = mtoggle
-				mt = mtoggle.contains(event.target);
-			})
-
-			if (!isClickInside && !mt) {
-				if ( document.body.classList.contains('offcanvas-menu') ) {
-					document.body.classList.remove('offcanvas-menu');
-					mtoggleTemp.classList.remove('active');
-				}
-			}
-
-		});
-
-	}; 
-	siteMenuClone();
-
-
-})()
+    if (!isClickInside && !mt) {
+      if (document.body.classList.contains('offcanvas-menu')) {
+        document.body.classList.remove('offcanvas-menu');
+        mtoggleTemp.classList.remove('active');
+      }
+    }
+  });
+}
