@@ -22,8 +22,4 @@ document.addEventListener('DOMContentLoaded', function() {
       `);
     }
   }
-
-  if (termoBusca) {
-    history.replaceState({}, document.title, window.location.pathname);
-  }
 });

@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
       e.preventDefault();
       const termo = input.value.trim().toLowerCase();
       if (termo) {
-        window.location.href = `./app/pages/list_books.html?q=${encodeURIComponent(termo)}`;
+        window.location.href = `./app/pages/search_books.html?q=${encodeURIComponent(termo)}`;
       } else {
-        window.location.href = `./app/pages/list_books.html`;
+        window.location.href = `./app/pages/search_books.html`;
       }
     });
   }
